@@ -9,7 +9,7 @@ from langchain.chains.question_answering import load_qa_chain
 
 
 text =""
-os.environ['OPENAI_API_KEY'] = st.secrets['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']
+os.environ['OPENAI_API_KEY'] = st.secrets['apikey']
 chain = load_qa_chain(OpenAI(),chain_type='stuff')
 st.set_page_config(page_title='DOCGPT')
 st.header('DocGPT :books:')
